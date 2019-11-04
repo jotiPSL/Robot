@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20191029 12:44:08.397" generator="Robot 3.0b1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\jkotla\Robot1\TransAccessRobot" id="s1" name="TransAccessRobot">
+<suite source="C:\Users\jkotla\Robot1\TransAccessRobot\orcfdm" id="s1-s1" name="Orcfdm">
+<suite source="C:\Users\jkotla\Robot1\TransAccessRobot\orcfdm\Tests" id="s1-s1-s1" name="Tests">
+<suite source="C:\Users\jkotla\Robot1\TransAccessRobot\orcfdm\Tests\Admin_AdministrationsWizard" id="s1-s1-s1-s1" name="Admin AdministrationsWizard">
+<suite source="C:\Users\jkotla\Robot1\TransAccessRobot\orcfdm\Tests\Admin_AdministrationsWizard\Document Type" id="s1-s1-s1-s1-s1" name="Document Type">
+<suite source="C:\Users\jkotla\Robot1\TransAccessRobot\orcfdm\Tests\Admin_AdministrationsWizard\Document Type\addNewDoc.robot" id="s1-s1-s1-s1-s1-s1" name="addNewDoc">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Add Document Type">
+<kw name="Login" library="resources">
+<kw name="Open Browser To Login Page" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191029 12:44:47.763" level="INFO">Opening browser 'Chrome' to base url 'http://96.127.89.78:9911/TransacessImagingORCFDM/'.</msg>
+<status status="PASS" endtime="20191029 12:45:16.906" starttime="20191029 12:44:47.763"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20191029 12:45:18.521" starttime="20191029 12:45:16.906"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20191029 12:45:18.524" starttime="20191029 12:45:18.521"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resources">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>TransAccess Imaging</arg>
+</arguments>
+<msg timestamp="20191029 12:45:18.539" level="INFO">Page title is 'TransAccess Imaging'.</msg>
+<status status="PASS" endtime="20191029 12:45:18.539" starttime="20191029 12:45:18.524"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:18.541" starttime="20191029 12:45:18.524"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:18.541" starttime="20191029 12:44:47.760"></status>
+</kw>
+<kw name="Input Username" library="resources">
+<arguments>
+<arg>FHA232/GARTHURPROD</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20191029 12:45:18.544" level="INFO">Typing text 'FHA232/GARTHURPROD' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20191029 12:45:19.184" starttime="20191029 12:45:18.541"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:19.184" starttime="20191029 12:45:18.541"></status>
+</kw>
+<kw name="Input Password" library="resources">
+<arguments>
+<arg>Cescrew813!</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20191029 12:45:19.186" level="INFO">Typing text 'Cescrew813!' into text field 'id=password'.</msg>
+<status status="PASS" endtime="20191029 12:45:19.454" starttime="20191029 12:45:19.186"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:19.454" starttime="20191029 12:45:19.184"></status>
+</kw>
+<kw name="Submit Credentials" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=Submit</arg>
+</arguments>
+<msg timestamp="20191029 12:45:19.454" level="INFO">Clicking button 'id=Submit'.</msg>
+<status status="PASS" endtime="20191029 12:45:21.624" starttime="20191029 12:45:19.454"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:21.624" starttime="20191029 12:45:19.454"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+</arguments>
+<msg timestamp="20191029 12:45:21.636" level="INFO">Current location is 'http://96.127.89.78:9911/TransacessImagingORCFDM/Getlogin'.</msg>
+<status status="PASS" endtime="20191029 12:45:21.636" starttime="20191029 12:45:21.624"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>TransAccess Imaging- Landing page</arg>
+</arguments>
+<msg timestamp="20191029 12:45:21.641" level="INFO">Page title is 'TransAccess Imaging- Landing page'.</msg>
+<status status="PASS" endtime="20191029 12:45:21.641" starttime="20191029 12:45:21.636"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:21.641" starttime="20191029 12:45:21.624"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:21.641" starttime="20191029 12:44:47.760"></status>
+</kw>
+<kw name="Click Admin" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//div[2]/ul/li[2]/a)</arg>
+</arguments>
+<msg timestamp="20191029 12:45:21.644" level="INFO">Clicking element 'xpath=(//div[2]/ul/li[2]/a)'.</msg>
+<status status="PASS" endtime="20191029 12:45:23.791" starttime="20191029 12:45:21.644"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:23.791" starttime="20191029 12:45:21.641"></status>
+</kw>
+<kw name="Click Document Type" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@id='collapseAdminSecond']/div/a[6])</arg>
+</arguments>
+<msg timestamp="20191029 12:45:23.794" level="INFO">Clicking element 'xpath=(//*[@id='collapseAdminSecond']/div/a[6])'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20191029 12:45:24.554" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20191029 12:45:24.556" starttime="20191029 12:45:23.829"></status>
+</kw>
+<msg timestamp="20191029 12:45:24.886" level="FAIL">Element with locator 'xpath=(//*[@id='collapseAdminSecond']/div/a[6])' not found.</msg>
+<status status="FAIL" endtime="20191029 12:45:24.886" starttime="20191029 12:45:23.791"></status>
+</kw>
+<status status="FAIL" endtime="20191029 12:45:24.886" starttime="20191029 12:45:23.791"></status>
+</kw>
+<status status="FAIL" endtime="20191029 12:45:24.889" critical="yes" starttime="20191029 12:44:47.758">Element with locator 'xpath=(//*[@id='collapseAdminSecond']/div/a[6])' not found.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t2" name="Delete Document Type">
+<kw name="Login" library="resources">
+<kw name="Open Browser To Login Page" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191029 12:45:24.891" level="INFO">Opening browser 'Chrome' to base url 'http://96.127.89.78:9911/TransacessImagingORCFDM/'.</msg>
+<status status="PASS" endtime="20191029 12:45:43.125" starttime="20191029 12:45:24.891"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20191029 12:45:44.275" starttime="20191029 12:45:43.125"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20191029 12:45:44.277" starttime="20191029 12:45:44.275"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resources">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>TransAccess Imaging</arg>
+</arguments>
+<msg timestamp="20191029 12:45:44.290" level="INFO">Page title is 'TransAccess Imaging'.</msg>
+<status status="PASS" endtime="20191029 12:45:44.292" starttime="20191029 12:45:44.277"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:44.292" starttime="20191029 12:45:44.277"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:44.292" starttime="20191029 12:45:24.891"></status>
+</kw>
+<kw name="Input Username" library="resources">
+<arguments>
+<arg>FHA232/GARTHURPROD</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20191029 12:45:44.295" level="INFO">Typing text 'FHA232/GARTHURPROD' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20191029 12:45:44.515" starttime="20191029 12:45:44.295"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:44.515" starttime="20191029 12:45:44.292"></status>
+</kw>
+<kw name="Input Password" library="resources">
+<arguments>
+<arg>Cescrew813!</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20191029 12:45:44.515" level="INFO">Typing text 'Cescrew813!' into text field 'id=password'.</msg>
+<status status="PASS" endtime="20191029 12:45:44.642" starttime="20191029 12:45:44.515"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:44.642" starttime="20191029 12:45:44.515"></status>
+</kw>
+<kw name="Submit Credentials" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=Submit</arg>
+</arguments>
+<msg timestamp="20191029 12:45:44.642" level="INFO">Clicking button 'id=Submit'.</msg>
+<status status="PASS" endtime="20191029 12:45:48.002" starttime="20191029 12:45:44.642"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:48.002" starttime="20191029 12:45:44.642"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+</arguments>
+<msg timestamp="20191029 12:45:48.012" level="INFO">Current location is 'http://96.127.89.78:9911/TransacessImagingORCFDM/Getlogin'.</msg>
+<status status="PASS" endtime="20191029 12:45:48.012" starttime="20191029 12:45:48.002"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>TransAccess Imaging- Landing page</arg>
+</arguments>
+<msg timestamp="20191029 12:45:48.020" level="INFO">Page title is 'TransAccess Imaging- Landing page'.</msg>
+<status status="PASS" endtime="20191029 12:45:48.020" starttime="20191029 12:45:48.012"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:48.020" starttime="20191029 12:45:48.002"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:48.020" starttime="20191029 12:45:24.889"></status>
+</kw>
+<kw name="Click Admin" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//div[2]/ul/li[2]/a)</arg>
+</arguments>
+<msg timestamp="20191029 12:45:48.022" level="INFO">Clicking element 'xpath=(//div[2]/ul/li[2]/a)'.</msg>
+<status status="PASS" endtime="20191029 12:45:53.100" starttime="20191029 12:45:48.020"></status>
+</kw>
+<status status="PASS" endtime="20191029 12:45:53.100" starttime="20191029 12:45:48.020"></status>
+</kw>
+<kw name="Click Document Type" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//*[@id='collapseAdminSecond']/div/a[6])</arg>
+</arguments>
+<msg timestamp="20191029 12:45:53.105" level="INFO">Clicking element 'xpath=(//*[@id='collapseAdminSecond']/div/a[6])'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20191029 12:45:53.695" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20191029 12:45:53.697" starttime="20191029 12:45:53.155"></status>
+</kw>
+<msg timestamp="20191029 12:45:53.700" level="FAIL">Element with locator 'xpath=(//*[@id='collapseAdminSecond']/div/a[6])' not found.</msg>
+<status status="FAIL" endtime="20191029 12:45:53.700" starttime="20191029 12:45:53.102"></status>
+</kw>
+<status status="FAIL" endtime="20191029 12:45:53.700" starttime="20191029 12:45:53.100"></status>
+</kw>
+<status status="FAIL" endtime="20191029 12:45:53.702" critical="yes" starttime="20191029 12:45:24.889">Element with locator 'xpath=(//*[@id='collapseAdminSecond']/div/a[6])' not found.</status>
+</test>
+<doc>Add new Document type
+
+
+
+
+</doc>
+<status status="FAIL" endtime="20191029 12:45:53.707" starttime="20191029 12:44:38.824"></status>
+</suite>
+<status status="FAIL" endtime="20191029 12:45:53.713" starttime="20191029 12:44:38.819"></status>
+</suite>
+<status status="FAIL" endtime="20191029 12:45:53.718" starttime="20191029 12:44:38.814"></status>
+</suite>
+<status status="FAIL" endtime="20191029 12:45:53.723" starttime="20191029 12:44:38.809"></status>
+</suite>
+<status status="FAIL" endtime="20191029 12:45:53.728" starttime="20191029 12:44:38.804"></status>
+</suite>
+<status status="FAIL" endtime="20191029 12:45:53.731" starttime="20191029 12:44:38.674"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="TransAccessRobot" pass="0">TransAccessRobot</stat>
+<stat fail="2" id="s1-s1" name="Orcfdm" pass="0">TransAccessRobot.Orcfdm</stat>
+<stat fail="2" id="s1-s1-s1" name="Tests" pass="0">TransAccessRobot.Orcfdm.Tests</stat>
+<stat fail="2" id="s1-s1-s1-s1" name="Admin AdministrationsWizard" pass="0">TransAccessRobot.Orcfdm.Tests.Admin AdministrationsWizard</stat>
+<stat fail="2" id="s1-s1-s1-s1-s1" name="Document Type" pass="0">TransAccessRobot.Orcfdm.Tests.Admin AdministrationsWizard.Document Type</stat>
+<stat fail="2" id="s1-s1-s1-s1-s1-s1" name="addNewDoc" pass="0">TransAccessRobot.Orcfdm.Tests.Admin AdministrationsWizard.Document Type.addNewDoc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
